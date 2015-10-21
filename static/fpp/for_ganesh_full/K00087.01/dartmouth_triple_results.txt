@@ -1,1 +1,0 @@
-mass mass_lo mass_hi radius radius_lo radius_hi Teff Teff_lo Teff_hi logg logg_lo logg_hi feh feh_lo feh_hi age age_lo age_hi distance distance_lo distance_hi AV AV_lo AV_hi 
