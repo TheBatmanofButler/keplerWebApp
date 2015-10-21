@@ -12,18 +12,8 @@ KOInumberList = open('static/other/KOInumberList.txt', 'r').read().split()
 @app.route('/', methods=['GET', 'POST'])
 def initPage():
 	try: KOInumber = request.form['KOIinput']
-	except: KOInumber = ''
-	else:
-		return render_template('index.html', KOInumberList=KOInumberList, KOInumber=KOInumber)
-
-# def imageAddress(imageName):
-# 	KOInumber = request.form['KOIinput']
-# 	try: KOInumber = request.form['KOIinput']
-# 	except: return 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
-# 	else:
-# 		return 'http://tigress-web.princeton.edu/~tmorton/koi-fpp/K' + KOInumber + '/' + imageName
-
-# app.jinja_env.filters['imageAddress'] = imageAddress
+	except: return render_template('index.html', KOInumberList=KOInumberList, KOInumber='')
+	else: return render_template('index.html', KOInumberList=KOInumberList, KOInumber=KOInumber)
 
 if __name__ == "__main__":
 	app.run(debug=True)
