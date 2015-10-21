@@ -1,0 +1,197 @@
+2015-06-23 00:10:47,120: Single StarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_single.h5
+2015-06-23 00:10:47,167: BinaryStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_binary.h5
+2015-06-23 00:10:47,210: TripleStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_triple.h5
+2015-06-23 00:10:47,248: Loading transit signal from /tigress/tmorton/kepler/fpp/K00087.01/trsig.pkl...
+2015-06-23 00:10:48,893: /tigress/tmorton/kepler/fpp/K00087.01/popset.h5 exists, but regenerating Population Set...
+Traceback (most recent call last):
+  File "/home/tmorton/anaconda/lib/python2.7/site-packages/VESPA-0.2.5-py2.7-linux-x86_64.egg/vespa/fpp.py", line 281, in from_ini
+    raise RuntimeError #just to get to except block
+RuntimeError
+2015-06-23 00:11:28,918: 14125 eclipsing HEB systems generated (target 20000)
+2015-06-23 00:11:29,236: 21196 eclipsing HEB systems generated (target 20000)
+2015-06-23 00:11:29,946: Fitting trapezoid models for HEBs...
+2015-06-23 00:13:21,863: No eclipse registered for index 1343
+2015-06-23 00:15:48,337: No eclipse registered for index 3075
+2015-06-23 00:39:22,474: Done.
+2015-06-23 00:39:31,112: 18990 Eclipsing EB systems generated (target 20000)
+2015-06-23 00:39:31,206: 20208 Eclipsing EB systems generated (target 20000)
+2015-06-23 00:39:31,640: Fitting trapezoid models for EBs...
+2015-06-23 00:54:49,996: Done.
+2015-06-23 00:54:51,605: Loading TRILEGAL simulation from /tigress/tmorton/kepler/fpp/starfields/kepler_starfield_8.0.h5
+2015-06-23 00:55:13,360: 198 binaries are "too close"; gave up trying to fix.
+2015-06-23 00:55:13,435: 325 BEB systems generated (target 20000)
+2015-06-23 00:55:19,198: 5292 binaries are "too close"; gave up trying to fix.
+2015-06-23 00:55:20,371: 7953 BEB systems generated (target 20000)
+2015-06-23 00:55:25,979: 5414 binaries are "too close"; gave up trying to fix.
+2015-06-23 00:55:27,112: 15644 BEB systems generated (target 20000)
+2015-06-23 00:55:31,056: 3740 binaries are "too close"; gave up trying to fix.
+2015-06-23 00:55:31,842: 20871 BEB systems generated (target 20000)
+2015-06-23 00:55:31,939: Fitting trapezoid models for BEBs...
+2015-06-23 00:55:33,890: No eclipse registered for index 24
+2015-06-23 01:00:29,769: No eclipse registered for index 3947
+2015-06-23 01:00:43,948: No eclipse registered for index 4133
+2015-06-23 01:02:36,856: No eclipse registered for index 5630
+2015-06-23 01:05:36,585: No eclipse registered for index 8019
+2015-06-23 01:08:13,806: No eclipse registered for index 10105
+2015-06-23 01:11:37,890: No eclipse registered for index 12798
+2015-06-23 01:16:46,239: No eclipse registered for index 16869
+2015-06-23 01:19:00,537: No eclipse registered for index 18667
+2015-06-23 01:19:26,335: No eclipse registered for index 18999
+2015-06-23 01:20:41,664: Done.
+2015-06-23 01:20:44,129: 18070 Transiting planet systems generated (target 20000)
+2015-06-23 01:20:44,476: 20223 Transiting planet systems generated (target 20000)
+2015-06-23 01:20:44,575: Fitting trapezoid models for Planets...
+2015-06-23 01:20:46,758: No eclipse registered for index 49
+2015-06-23 01:20:48,855: No eclipse registered for index 98
+2015-06-23 01:20:52,313: No eclipse registered for index 178
+2015-06-23 01:21:01,022: No eclipse registered for index 381
+2015-06-23 01:21:04,347: No eclipse registered for index 457
+2015-06-23 01:21:17,971: No eclipse registered for index 770
+2015-06-23 01:21:20,005: No eclipse registered for index 818
+2015-06-23 01:21:32,948: No eclipse registered for index 1117
+2015-06-23 01:21:33,986: No eclipse registered for index 1141
+2015-06-23 01:21:41,191: No eclipse registered for index 1307
+2015-06-23 01:21:45,523: No eclipse registered for index 1407
+2015-06-23 01:21:50,977: No eclipse registered for index 1533
+2015-06-23 01:22:11,042: No eclipse registered for index 1992
+2015-06-23 01:22:22,862: No eclipse registered for index 2266
+2015-06-23 01:22:22,930: No eclipse registered for index 2268
+2015-06-23 01:22:25,642: No eclipse registered for index 2330
+2015-06-23 01:22:42,878: No eclipse registered for index 2726
+2015-06-23 01:22:50,269: No eclipse registered for index 2896
+2015-06-23 01:22:51,936: No eclipse registered for index 2935
+2015-06-23 01:23:10,704: No eclipse registered for index 3367
+2015-06-23 01:23:15,215: No eclipse registered for index 3470
+2015-06-23 01:23:51,008: No eclipse registered for index 4294
+2015-06-23 01:24:15,696: No eclipse registered for index 4861
+2015-06-23 01:24:20,940: No eclipse registered for index 4980
+2015-06-23 01:25:05,849: No eclipse registered for index 6007
+2015-06-23 01:25:16,362: No eclipse registered for index 6250
+2015-06-23 01:25:26,909: No eclipse registered for index 6494
+2015-06-23 01:25:35,287: No eclipse registered for index 6686
+2015-06-23 01:25:35,354: No eclipse registered for index 6688
+2015-06-23 01:25:51,021: No eclipse registered for index 7047
+2015-06-23 01:25:51,798: No eclipse registered for index 7065
+2015-06-23 01:25:54,020: No eclipse registered for index 7117
+2015-06-23 01:26:14,916: No eclipse registered for index 7596
+2015-06-23 01:26:19,491: No eclipse registered for index 7701
+2015-06-23 01:26:19,558: No eclipse registered for index 7703
+2015-06-23 01:26:28,272: No eclipse registered for index 7902
+2015-06-23 01:26:31,956: No eclipse registered for index 7986
+2015-06-23 01:26:36,196: No eclipse registered for index 8084
+2015-06-23 01:26:36,526: No eclipse registered for index 8092
+2015-06-23 01:26:42,420: No eclipse registered for index 8228
+2015-06-23 01:26:43,255: No eclipse registered for index 8248
+2015-06-23 01:26:56,499: No eclipse registered for index 8553
+2015-06-23 01:27:09,616: No eclipse registered for index 8853
+2015-06-23 01:27:24,967: No eclipse registered for index 9206
+2015-06-23 01:28:07,087: No eclipse registered for index 10171
+2015-06-23 01:28:37,310: No eclipse registered for index 10860
+2015-06-23 01:28:41,237: No eclipse registered for index 10951
+2015-06-23 01:28:54,987: No eclipse registered for index 11263
+2015-06-23 01:29:03,199: No eclipse registered for index 11450
+2015-06-23 01:29:24,738: No eclipse registered for index 11939
+2015-06-23 01:29:39,766: No eclipse registered for index 12285
+2015-06-23 01:29:55,210: No eclipse registered for index 12637
+2015-06-23 01:30:08,421: No eclipse registered for index 12938
+2015-06-23 01:30:14,981: No eclipse registered for index 13089
+2015-06-23 01:30:21,105: No eclipse registered for index 13228
+2015-06-23 01:30:21,998: No eclipse registered for index 13249
+2015-06-23 01:30:45,616: No eclipse registered for index 13792
+2015-06-23 01:30:50,459: No eclipse registered for index 13902
+2015-06-23 01:30:51,354: No eclipse registered for index 13923
+2015-06-23 01:30:58,187: No eclipse registered for index 14080
+2015-06-23 01:30:58,724: No eclipse registered for index 14093
+2015-06-23 01:30:59,811: No eclipse registered for index 14118
+2015-06-23 01:31:06,561: No eclipse registered for index 14273
+2015-06-23 01:31:07,962: No eclipse registered for index 14305
+2015-06-23 01:31:08,251: No eclipse registered for index 14312
+2015-06-23 01:31:13,063: No eclipse registered for index 14422
+2015-06-23 01:31:29,681: No eclipse registered for index 14799
+2015-06-23 01:31:42,397: No eclipse registered for index 15092
+2015-06-23 01:31:45,073: No eclipse registered for index 15155
+2015-06-23 01:31:45,496: No eclipse registered for index 15165
+2015-06-23 01:31:46,676: No eclipse registered for index 15193
+2015-06-23 01:31:49,274: No eclipse registered for index 15253
+2015-06-23 01:31:54,438: No eclipse registered for index 15372
+2015-06-23 01:32:00,328: No eclipse registered for index 15508
+2015-06-23 01:32:02,394: No eclipse registered for index 15551
+2015-06-23 01:32:04,921: No eclipse registered for index 15610
+2015-06-23 01:32:06,859: No eclipse registered for index 15655
+2015-06-23 01:32:23,067: No eclipse registered for index 16025
+2015-06-23 01:32:27,624: No eclipse registered for index 16128
+2015-06-23 01:32:41,504: No eclipse registered for index 16451
+2015-06-23 01:32:52,053: No eclipse registered for index 16695
+2015-06-23 01:32:52,905: No eclipse registered for index 16715
+2015-06-23 01:32:54,892: No eclipse registered for index 16761
+2015-06-23 01:32:55,690: No eclipse registered for index 16780
+2015-06-23 01:33:21,113: No eclipse registered for index 17360
+2015-06-23 01:33:31,563: No eclipse registered for index 17600
+2015-06-23 01:33:33,540: No eclipse registered for index 17645
+2015-06-23 01:33:42,274: No eclipse registered for index 17847
+2015-06-23 01:33:55,231: No eclipse registered for index 18146
+2015-06-23 01:33:57,877: No eclipse registered for index 18207
+2015-06-23 01:34:17,067: No eclipse registered for index 18648
+2015-06-23 01:34:19,991: No eclipse registered for index 18716
+2015-06-23 01:34:29,327: No eclipse registered for index 18933
+2015-06-23 01:34:33,031: No eclipse registered for index 19019
+2015-06-23 01:34:33,823: No eclipse registered for index 19037
+2015-06-23 01:34:33,888: No eclipse registered for index 19039
+2015-06-23 01:34:41,849: No eclipse registered for index 19222
+2015-06-23 01:34:52,075: No eclipse registered for index 19457
+2015-06-23 01:35:15,676: Done.
+2015-06-23 01:35:59,137: FPP calculation successful. Results/plots written to /tigress/tmorton/kepler/fpp/K00087.01.
+2015-07-08 20:21:54,997: Single StarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_single.h5
+2015-07-08 20:21:55,062: BinaryStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_binary.h5
+2015-07-08 20:21:55,108: TripleStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_triple.h5
+2015-07-08 20:21:55,124: Loading transit signal from /tigress/tmorton/kepler/fpp/K00087.01/trsig.pkl...
+2015-07-08 20:21:58,851: PopulationSet loaded from /tigress/tmorton/kepler/fpp/K00087.01/popset.h5
+2015-07-08 20:21:58,853: FPP calculation failed for K00087.01.
+Traceback (most recent call last):
+  File "/home/tmorton/anaconda/lib/python2.7/site-packages/VESPA-0.2.5-py2.7-linux-x86_64.egg/EGG-INFO/scripts/calcfpp", line 119, in <module>
+    n=args.n)
+  File "/home/tmorton/anaconda/lib/python2.7/site-packages/VESPA-0.2.5-py2.7-linux-x86_64.egg/vespa/fpp.py", line 327, in from_ini
+    if not np.isnan(secthresh):
+UnboundLocalError: local variable 'secthresh' referenced before assignment
+2015-07-09 10:25:29,981: Single StarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_single.h5
+2015-07-09 10:25:30,058: BinaryStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_binary.h5
+2015-07-09 10:25:30,105: TripleStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_triple.h5
+2015-07-09 10:25:30,127: Loading transit signal from /tigress/tmorton/kepler/fpp/K00087.01/trsig.pkl...
+2015-07-09 10:25:33,845: PopulationSet loaded from /tigress/tmorton/kepler/fpp/K00087.01/popset.h5
+2015-07-09 10:26:12,322: FPP calculation successful. Results/plots written to /tigress/tmorton/kepler/fpp/K00087.01.
+2015-07-10 21:28:08,444: Single StarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_single.h5
+2015-07-10 21:28:08,495: BinaryStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_binary.h5
+2015-07-10 21:28:08,534: TripleStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_triple.h5
+2015-07-10 21:28:08,534: Loading transit signal from /tigress/tmorton/kepler/fpp/K00087.01/trsig.pkl...
+2015-07-10 21:28:12,992: PopulationSet loaded from /tigress/tmorton/kepler/fpp/K00087.01/popset.h5
+2015-07-10 21:28:42,482: FPP calculation successful. Results/plots written to /tigress/tmorton/kepler/fpp/K00087.01.
+2015-07-10 21:29:59,314: Single StarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_single.h5
+2015-07-10 21:29:59,323: BinaryStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_binary.h5
+2015-07-10 21:29:59,331: TripleStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_triple.h5
+2015-07-10 21:29:59,331: Loading transit signal from /tigress/tmorton/kepler/fpp/K00087.01/trsig.pkl...
+2015-07-10 21:30:01,693: PopulationSet loaded from /tigress/tmorton/kepler/fpp/K00087.01/popset.h5
+2015-07-10 21:30:31,066: FPP calculation successful. Results/plots written to /tigress/tmorton/kepler/fpp/K00087.01.
+2015-07-11 10:21:24,947: Single StarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_single.h5
+2015-07-11 10:21:24,996: BinaryStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_binary.h5
+2015-07-11 10:21:25,036: TripleStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_triple.h5
+2015-07-11 10:21:25,043: Loading transit signal from /tigress/tmorton/kepler/fpp/K00087.01/trsig.pkl...
+2015-07-11 10:21:29,060: PopulationSet loaded from /tigress/tmorton/kepler/fpp/K00087.01/popset.h5
+2015-07-11 10:21:56,746: FPP calculation successful. Results/plots written to /tigress/tmorton/kepler/fpp/K00087.01.
+2015-08-05 23:03:42,602: Single StarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_single.h5
+2015-08-05 23:03:42,655: BinaryStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_binary.h5
+2015-08-05 23:03:42,698: TripleStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_triple.h5
+2015-08-05 23:03:42,730: Loading transit signal from /tigress/tmorton/kepler/fpp/K00087.01/trsig.pkl...
+2015-08-05 23:03:46,780: PopulationSet loaded from /tigress/tmorton/kepler/fpp/K00087.01/popset.h5
+2015-08-05 23:04:26,324: FPP calculation successful. Results/plots written to /tigress/tmorton/kepler/fpp/K00087.01.
+2015-08-06 19:40:47,186: Single StarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_single.h5
+2015-08-06 19:40:47,240: BinaryStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_binary.h5
+2015-08-06 19:40:47,288: TripleStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_triple.h5
+2015-08-06 19:40:47,288: Loading transit signal from /tigress/tmorton/kepler/fpp/K00087.01/trsig.pkl...
+2015-08-06 19:40:53,326: PopulationSet loaded from /tigress/tmorton/kepler/fpp/K00087.01/popset.h5
+2015-08-06 19:41:35,210: FPP calculation successful. Results/plots written to /tigress/tmorton/kepler/fpp/K00087.01.
+2015-08-12 22:34:35,073: Single StarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_single.h5
+2015-08-12 22:34:35,140: BinaryStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_binary.h5
+2015-08-12 22:34:35,191: TripleStarModel loaded from /tigress/tmorton/kepler/fpp/K00087.01/dartmouth_starmodel_triple.h5
+2015-08-12 22:34:35,192: Loading transit signal from /tigress/tmorton/kepler/fpp/K00087.01/trsig.pkl...
+2015-08-12 22:34:40,346: PopulationSet loaded from /tigress/tmorton/kepler/fpp/K00087.01/popset.h5
+2015-08-12 22:35:10,608: FPP calculation successful. Results/plots written to /tigress/tmorton/kepler/fpp/K00087.01.

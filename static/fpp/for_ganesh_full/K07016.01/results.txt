@@ -1,0 +1,2 @@
+L_beb pr_beb L_eb pr_eb L_heb pr_heb L_pl pr_pl fpV fp FPP
+6.85e-04 4.11e-04 7.34e-04 4.40e-04 6.75e-10 4.04e-10 1.67e+00 9.99e-01 0.027 0.160 8.50e-04

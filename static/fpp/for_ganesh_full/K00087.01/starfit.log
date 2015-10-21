@@ -1,0 +1,21 @@
+2015-07-08 02:50:37,289: single starfit successful for K00087.01 in 0.5 minutes.
+2015-07-08 02:51:07,904: binary starfit successful for K00087.01 in 0.5 minutes.
+2015-07-08 02:51:41,947: triple starfit successful for K00087.01 in 0.6 minutes.
+2015-07-08 10:37:18,646: single starfit successful for K00087.01 in 0.5 minutes.
+2015-07-08 10:37:49,800: binary starfit successful for K00087.01 in 0.5 minutes.
+2015-07-08 10:38:24,616: triple starfit successful for K00087.01 in 0.6 minutes.
+2015-07-08 10:52:50,351: single starfit successful for K00087.01 in 0.5 minutes.
+2015-07-08 10:53:20,337: binary starfit successful for K00087.01 in 0.5 minutes.
+2015-07-08 10:53:53,833: triple starfit successful for K00087.01 in 0.6 minutes.
+2015-07-08 11:08:58,756: dartmouth_starmodel_single.h5 exists.  Use -o to overwrite.
+2015-07-08 11:08:58,769: single starfit successful for K00087.01 in 0.0 minutes.
+2015-07-08 11:08:58,807: dartmouth_starmodel_binary.h5 exists.  Use -o to overwrite.
+2015-07-08 11:08:58,807: binary starfit successful for K00087.01 in 0.0 minutes.
+2015-07-08 11:08:58,854: dartmouth_starmodel_triple.h5 exists.  Use -o to overwrite.
+2015-07-08 11:08:58,855: triple starfit successful for K00087.01 in 0.0 minutes.
+2015-07-08 12:37:01,484: dartmouth_starmodel_single.h5 exists.  Use -o to overwrite.
+2015-07-08 12:37:01,528: single starfit successful for K00087.01 in 0.0 minutes.
+2015-07-08 12:37:01,564: dartmouth_starmodel_binary.h5 exists.  Use -o to overwrite.
+2015-07-08 12:37:01,577: binary starfit successful for K00087.01 in 0.0 minutes.
+2015-07-08 12:37:01,621: dartmouth_starmodel_triple.h5 exists.  Use -o to overwrite.
+2015-07-08 12:37:01,651: triple starfit successful for K00087.01 in 0.0 minutes.
