@@ -6,6 +6,10 @@ html, body {
 	padding: 0.4vw;
 }
 
+input[type="radio"].toggle {
+  display: none;
+}
+
 #figure {/*
 	width: 700px;
 	height: 700px;
