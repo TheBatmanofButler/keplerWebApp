@@ -1,0 +1,2 @@
+mass mass_lo mass_hi radius radius_lo radius_hi Teff Teff_lo Teff_hi logg logg_lo logg_hi feh feh_lo feh_hi age age_lo age_hi distance distance_lo distance_hi AV AV_lo AV_hi 
+0.896 0.866 0.926 0.935 0.903 0.967 5698.738 5661.218 5738.582 4.449 4.420 4.477 -0.210 -0.286 -0.134 9.845 9.738 9.931 217.378 209.684 225.453 0.029 0.008 0.065 

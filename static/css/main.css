@@ -1,0 +1,65 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Ubuntu"; }
+  html ul, body ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  html .gridster ul li, body .gridster ul li {
+    background-color: yellow; }
+  html .panel-wrapper, body .panel-wrapper {
+    width: 100%;
+    height: 100%; }
+    html .panel-wrapper #control-panel, body .panel-wrapper #control-panel {
+      width: 20%;
+      height: 100%;
+      text-align: center;
+      background-color: #011627;
+      float: left; }
+      html .panel-wrapper #control-panel ul, body .panel-wrapper #control-panel ul {
+        padding-top: 15%; }
+        html .panel-wrapper #control-panel ul li, body .panel-wrapper #control-panel ul li {
+          padding: 1%;
+          margin: 0 1% 1% 1%;
+          cursor: pointer;
+          background-color: #363946;
+          color: #FF6E1E; }
+          html .panel-wrapper #control-panel ul li:hover, html .panel-wrapper #control-panel ul li .selected, body .panel-wrapper #control-panel ul li:hover, body .panel-wrapper #control-panel ul li .selected {
+            background-color: #95A3A4; }
+      html .panel-wrapper #control-panel #dartmouth-physical, body .panel-wrapper #control-panel #dartmouth-physical {
+        margin-left: 20%; }
+      html .panel-wrapper #control-panel #dartmouth-physical-single-star, html .panel-wrapper #control-panel #dartmouth-physical-binary-star, html .panel-wrapper #control-panel #dartmouth-physical-triple-star, body .panel-wrapper #control-panel #dartmouth-physical-single-star, body .panel-wrapper #control-panel #dartmouth-physical-binary-star, body .panel-wrapper #control-panel #dartmouth-physical-triple-star {
+        margin-left: 40%; }
+      html .panel-wrapper #control-panel #dartmouth-observed, body .panel-wrapper #control-panel #dartmouth-observed {
+        margin-left: 20%; }
+      html .panel-wrapper #control-panel #dartmouth-observed-single-star, html .panel-wrapper #control-panel #dartmouth-observed-binary-star, html .panel-wrapper #control-panel #dartmouth-observed-triple-star, body .panel-wrapper #control-panel #dartmouth-observed-single-star, body .panel-wrapper #control-panel #dartmouth-observed-binary-star, body .panel-wrapper #control-panel #dartmouth-observed-triple-star {
+        margin-left: 40%; }
+      html .panel-wrapper #control-panel #likelihood-plot-pl, body .panel-wrapper #control-panel #likelihood-plot-pl {
+        margin-left: 20%; }
+      html .panel-wrapper #control-panel #likelihood-plot-eb, body .panel-wrapper #control-panel #likelihood-plot-eb {
+        margin-left: 20%; }
+      html .panel-wrapper #control-panel #likelihood-plot-beb, body .panel-wrapper #control-panel #likelihood-plot-beb {
+        margin-left: 20%; }
+      html .panel-wrapper #control-panel #likelihood-plot-heb, body .panel-wrapper #control-panel #likelihood-plot-heb {
+        margin-left: 20%; }
+    html .panel-wrapper #display-panel, body .panel-wrapper #display-panel {
+      width: 80%;
+      height: 100%;
+      float: right;
+      background-color: red; }
+      html .panel-wrapper #display-panel img, body .panel-wrapper #display-panel img {
+        width: 100%; }
+      html .panel-wrapper #display-panel #grid-wrapper, body .panel-wrapper #display-panel #grid-wrapper {
+        width: 100%;
+        height: 100%; }
+        html .panel-wrapper #display-panel #grid-wrapper #fpp-summary-panel, body .panel-wrapper #display-panel #grid-wrapper #fpp-summary-panel {
+          width: 10%; }
+        html .panel-wrapper #display-panel #grid-wrapper .dartmouth, body .panel-wrapper #display-panel #grid-wrapper .dartmouth {
+          width: 8%; }
+        html .panel-wrapper #display-panel #grid-wrapper .likelihood-plot, body .panel-wrapper #display-panel #grid-wrapper .likelihood-plot {
+          width: 10%; }
+
+/*# sourceMappingURL=main.css.map */

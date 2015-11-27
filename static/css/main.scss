@@ -1,0 +1,150 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+
+	width: 100%;
+	height: 100%;
+
+	font-family: "Ubuntu";
+
+	ul
+	{
+		margin: 0;
+		padding: 0;
+
+		list-style-type: none;
+	}
+
+	.gridster
+	{
+		ul
+		{
+			li
+			{
+				background-color: yellow;
+			}
+		}
+	}
+
+	.panel-wrapper
+	{
+		width: 100%;
+		height: 100%;
+
+		#control-panel
+		{
+			width: 20%;
+			height: 100%;
+
+			text-align: center;
+
+			background-color: #011627;
+
+			float: left;
+
+			ul
+			{
+				padding-top: 15%;
+
+				li
+				{
+					padding: 1%;
+					margin: 0 1% 1% 1%;
+
+					cursor: pointer;
+					
+					background-color: #363946;
+					color: #FF6E1E;
+
+					&:hover, .selected
+					{
+						background-color: #95A3A4;
+					}
+				}
+
+			}
+
+			#dartmouth-physical
+			{
+				margin-left: 20%;
+			}
+
+			#dartmouth-physical-single-star, #dartmouth-physical-binary-star, #dartmouth-physical-triple-star
+			{
+				margin-left: 40%;
+			}
+
+			#dartmouth-observed
+			{
+				margin-left: 20%;
+			}
+
+			#dartmouth-observed-single-star, #dartmouth-observed-binary-star, #dartmouth-observed-triple-star
+			{
+				margin-left: 40%;
+			}
+
+			#likelihood-plot-pl
+			{
+				margin-left: 20%;
+			}
+
+			#likelihood-plot-eb
+			{
+				margin-left: 20%;
+			}
+
+			#likelihood-plot-beb
+			{
+				margin-left: 20%;
+			}
+
+			#likelihood-plot-heb
+			{
+				margin-left: 20%;
+			}
+		}
+
+		#display-panel
+		{
+			width: 80%;
+			height: 100%;
+
+			float: right;
+
+			background-color: red;
+
+			img
+			{
+				width: 100%;
+			}
+
+			#grid-wrapper
+			{
+				width: 100%;
+				height: 100%;
+				
+				#fpp-summary-panel
+				{
+					width: 10%;
+					// display: none;
+				}
+
+				.dartmouth
+				{
+					width: 8%;
+					// display: none;
+				}
+
+				.likelihood-plot
+				{
+					width: 10%;
+					// display: none;
+				}
+			}
+
+		}
+	}
+
+}
