@@ -16,17 +16,6 @@ html, body
 		list-style-type: none;
 	}
 
-	.gridster
-	{
-		ul
-		{
-			li
-			{
-				background-color: yellow;
-			}
-		}
-	}
-
 	.panel-wrapper
 	{
 		width: 100%;
@@ -35,13 +24,15 @@ html, body
 		#control-panel
 		{
 			width: 20%;
-			height: 100%;
+			height: 100vh;
 
 			text-align: center;
 
 			background-color: #011627;
 
 			float: left;
+
+			position: fixed;
 
 			ul
 			{
@@ -104,6 +95,11 @@ html, body
 			{
 				margin-left: 20%;
 			}
+
+			#signal
+			{
+				margin-left: 20%;
+			}
 		}
 
 		#display-panel
@@ -139,12 +135,17 @@ html, body
 
 				.likelihood-plot
 				{
-					width: 10%;
+					width: 40%;
+					// display: none;
+				}
+
+				.signal-plot
+				{
+					width: 40%;
 					// display: none;
 				}
 			}
 
 		}
 	}
-
 }
