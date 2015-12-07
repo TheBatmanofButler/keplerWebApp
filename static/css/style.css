@@ -198,3 +198,7 @@ input[type="radio"].toggle {
 #submit {
 	cursor: pointer;
 }
+
+#KOIinput {
+	margin: 5px;
+}

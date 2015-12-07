@@ -30,6 +30,6 @@ def KOI_scraper(sourceCodeFilePath, newFilePath):
 
 	for i in re.finditer(searchText, sourceCode):
 		ind = i.start()
-		newFile.write(sourceCode[ind+len(searchText)-1:ind+len(searchText)+8] + '\n')
+		newFile.write("'" + sourceCode[ind+len(searchText)-1:ind+len(searchText)+8] + "\n',")
 
 	newFile.close()

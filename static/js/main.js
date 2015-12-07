@@ -1,3 +1,5 @@
+
+
 $('#stars_tab input[type=radio]').hide()
 
 $('#top-right input[type=radio]').hide()
@@ -137,3 +139,5 @@ $(function () {
 $('#submit').click(function(){
 	$('#hiddenSubmit').trigger('click');
 });
+
+KOIinput
