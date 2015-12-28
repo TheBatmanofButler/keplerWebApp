@@ -4,10 +4,9 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0.4vw;
-}
 
-input[type="radio"].toggle {
-  display: none;
+	color: #fff;
+	background-color: #0F084B;
 }
 
 #figure {/*
@@ -16,7 +15,7 @@ input[type="radio"].toggle {
 	float: left;*/
 }
 
-/*#data_options {
+/*#data-options {
 	width: 200px;
 	height: 200px;
 	float: left;
@@ -30,12 +29,8 @@ input[type="radio"].toggle {
 #left {
 	float:left;
 
-	width: 50vw;
-	width: 50vw;
-}
-
-#optionsform {
-	margin-bottom: 60px;
+	width: 48vw;
+	height: 48vw;
 }
 
 #KOIinput-label {
@@ -44,48 +39,47 @@ input[type="radio"].toggle {
 
 #right {
 	width: 47vw;
+	height: 100%;
 	float: right;
 }
 
-#right img {
+#bottom-right {
+	width: 30vw;
+	height: 23vw;
+	border: 0.17vw solid #054A91;
+
+	background-color: #fff;
+	float: right;
+}
+
+#signal-img {
 	width: 100%;
 }
 
 #top-right {
-	height: 25vw;
-	border: 0.17vw solid black;
+	margin-bottom: 1.25vw;
+	height: 28.5vw;
+	border: 0.17vw solid #054A91;
+
+	background-color: #fff;
 }
 
-#top-right img {
-	height: 100%;
-}
-
-#bottom-right {
-	margin-top: 1.25vw;
-}
-
-#bottom_right_tabs {
+#top-right-tabs {
 	float: left;
-	width: 4.2vw;
+	width: 8.2vw;
 }
 
-#bottom_right_tabs li {
-	min-height: 7.8vw;
-	border-left: 0.17vw solid black;
-	border-top: 0.17vw solid black;
-	border-bottom: 0.17vw solid black;
-	border-right: 0;
+#top-right-tabs li {
+	height: 4.07vw;
 	text-align: center;
 }
 
-#bottom_right_images {
-	border-right: 0.17vw solid black;
-	border-bottom: 0.17vw solid black;
-	border-top: 0.17vw solid black;
-	overflow: hidden;
+#top-right-images {
+	height: 100%;
 }
 
-#bottom_right_images img {
+.top-right-img {
+	display: none;
 	height: 100%;
 }
 
@@ -108,7 +102,6 @@ input[type="radio"].toggle {
 }
 
 .tabs li {
-	border: 0.17vw solid black;
 	margin: 0;
 	display: block;
 }
@@ -117,65 +110,85 @@ input[type="radio"].toggle {
 	cursor: pointer;
 }
 
-#FPP_tab {
-	background-color: white;
-	color: black;
+#FPP-stars-tabs {
+	width: 100%;
+	height: 10%;
 }
 
-#stars_tab {
-	background-color: black;
-	color: white;
-}
+	#FPP-tab {
+		background-color: white;
+		color: #054A91;
 
-#FPP_stars_tabs li{
+		float: left;
+		width: 50%;
+		height: 100%;
+
+		border-left: 0.17vw #054A91 solid;
+		border-top: 0.17vw #054A91 solid;
+	}
+
+	#stars-tab {
+		background-color: #054A91;
+		color: white;
+
+		text-align: center;
+
+		/*width: 50%;*/
+		margin-left: 50%;
+		height: 100%;
+
+		border-top: 0.17vw #054A91 solid;
+		border-right: 0.17vw #054A91 solid;
+	}
+
+#FPP-stars-tabs li{
 	display: inline;
-	border-bottom-width: 0;
 	padding: 0 0.4vw 0.17vw;
+	height:100%;
 }
 
-#FPP_stars_images {
-	border: 0.17vw black solid;
-	height: 50vw;
-	/*height: 100%;*/
+#FPP-stars-images {
+	padding-bottom: 1%;
+	border-bottom: 0.17vw #054A91 solid;
+	border-left: 0.17vw #054A91 solid;
+	border-right: 0.17vw #054A91 solid;
+	height: 100%;
+
+	background-color: #fff;
 }
 
-#FPP_stars_images img{
+.stars-img {
+	display: none;
+	cursor: move;
+	/*height: 10px;*/
+}
+
+#FPP-img {
+	display: none;
 	width: 100%;
 }
 
-#EB_img {
+#signal-img {
 	display: none;
 }
 
-#BEB_img {
-	display: none;
-}
-
-#HEB_img {
-	display: none;
-}
-
-#stars_img {
-	display: none;
-}
-
-#Pl_tab{
+#Pl-tab{
 	background-color: white;
-	color: black;
+	color: #054A91;
 }
 
-#EB_tab{
-	background-color: black;
+#EB-tab{
+	background-color: #054A91;
 	color: white;
 }
 
-#BEB_tab{
-	background-color: black;
+#BEB-tab{
+	background-color: #054A91;
 	color: white;
 }
 
-#HEB_tab{
-	background-color: black;
+#HEB-tab{
+	background-color: #054A91;
 	color: white;
 }
 
@@ -199,6 +212,70 @@ input[type="radio"].toggle {
 	cursor: pointer;
 }
 
-#KOIinput {
+#typeahead-wrapper {
 	margin: 5px;
+	font-size: 130%;
+}
+
+#typeahead {
+	border: 0;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: 0;
+
+	color: #fff;
+	font-size: 100%;
+}
+
+#typeahead:focus {
+	border-bottom: 1px solid #fff;
+}
+
+#intro {
+	height: 100vh;
+	text-align: center;
+}
+
+#intro>h1 {
+	font-size: 500%;
+}
+
+#intro>h2 {
+	font-size: 300%;
+}
+
+.italic {
+	font-style: italic;
+}
+
+#signature {
+	height: 2.8vh;
+	margin-top: 1vh;
+	font-size: 130%;
+
+	float: right;
+}
+
+#github-mark {
+	height: 100%;
+	vertical-align: text-top;
+}
+
+#github-mark:hover {
+	opacity: 0.7;
+}
+
+#stars-tab-wrapper-2 {
+	margin-top: 1%;
+}
+
+.stars-tab-labels {
+	background-color: #A6CFD5;
+	border: 1px solid #fff;
+}
+
+.tt-menu {
+	background-color: #0F084B;
+	width: 100%;
+	cursor: pointer;
 }

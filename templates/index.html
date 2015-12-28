@@ -4,111 +4,149 @@
 	<head>
 		<meta charset="UTF-8">
 
+		<!-- CSS -->
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		
+		<!-- JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript""https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/typeahead.bundle.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/wheelzoom.js') }}"></script>
+
 		{{ script|safe }}
+
 		<title>Kepler False Positive Interactive Plotting Tool</title>
 
 	</head>
 
 	<body>
 
-		{% macro tigress_url(img_name, KOInumber, id, class) -%}
-			<img src="http://tigress-web.princeton.edu/~tmorton/koi-fpp/{{ KOInumber }}/{{ img_name }}" id="{{ id }}" class="{{ class }}">
+		{% macro tigress_url(img_name, id, class) -%}
+			<img src="http://tigress-web.princeton.edu/~tmorton/koi-fpp/K{{ KOInumber }}/{{ img_name }}" id="{{ id }}" class="{{ class }}">
 		{%- endmacro %}
-
-		<section>
-			
-		</section>
 
 		<section id="form-wrapper">
 			<div id="left">
 
-				<input id="KOIinput">
-
-<!-- 				<form id='optionsform' action='/' method='POST'>
-					<div id="KOIinput-label">
-						<label for="KOIinput">KOI: </label>
-						<select id="KOIinput" name="KOIinput">
-							{% for KOI in KOInumberList %}
-								<option value={{ KOI }}>{{ KOI }}</option>
-							{% endfor %}
-						</select>
+				<div id="typeahead-wrapper">
+					<form id='optionsform' action='/' method='POST'>
+						<span id="K">K </span><input id="typeahead" name="KOI-number" type="text" value="{{ KOInumber }}">
 						<span id="submit">Submit</span>
 						<input id="hiddenSubmit" type="submit" value="Submit" hidden>
-						<span id="clear">Clear</span>
-					</div>
-				</form> -->
-
-				<div id="FPP_stars_tabs" class="tabs">
- 					<ul>
-						<li id="FPP_tab">
-							FPP Summary
-						</li>
-
-						<li id="stars_tab">
-							<label id="dartmouthTriangle" class="pointer">Dartmouth Triangle Plots | </label>
-
-							<input type="radio" name="starType" value="single" id="singleStar" checked>
-							<label for="singleStar" class="pointer">Single Star</label> | 
-							<input type="radio" name="starType" value="double" id="doubleStar">
-							<label for="doubleStar" class="pointer">Double Star</label> | 
-							<input type="radio" name="starType" value="triple" id="tripleStar">
-							<label for="tripleStar" class="pointer">Triple Star</label>
-						</li>
-
-					</ul>
+					</form>
 				</div>
-		        <div id="FPP_stars_images">
-					{{ tigress_url('FPPsummary.png', KOInumber, 'FPP_img') }}
-					{{ tigress_url('dartmouth_triangle_single_physical.png', KOInumber, 'singleStarImg', 'stars_img') }}
-					{{ tigress_url('dartmouth_triangle_binary_physical.png', KOInumber, 'doubleStarImg', 'stars_img') }}
-					{{ tigress_url('dartmouth_triangle_triple_physical.png', KOInumber, 'tripleStarImg', 'stars_img') }}
+
+				<div id="FPP-stars-tabs" class="tabs">
+					<div id="FPP-tab" class="pointer">
+						<span id="FPP-tab-label">FPP Summary</span>
+					</div>
+
+					<div id="stars-tab">
+						<div>
+							<span id="dartmouthTriangle" class="stars-tab-label">Dartmouth Triangle Plots </span>
+						</div>
+						
+						<div id="stars-tab-wrapper">
+							<span id = "single-star" class="pointer stars-tab-label stars-tab-labels">Single Star</span>
+							<span id = "double-star" class="pointer stars-tab-label stars-tab-labels">Double Star</span>
+							<span id = "triple-star" class="pointer stars-tab-label stars-tab-labels">Triple Star</span>
+						</div>
+
+						<div id="stars-tab-wrapper-2">
+							<span id="physical-triangle" class="pointer stars-tab-label-2 stars-tab-labels">Physical</span>
+							<span id="observed-triangle" class="pointer stars-tab-label-2 stars-tab-labels">Observed</span>
+						</div>
+					</div>
+
+						<!-- <li id="phys-obs-tab">
+							<span id="physical-triangle" class="pointer">Physical</span> |
+							<span id="observed-triangle" class="pointer">Observed</span>
+						</li> -->
+				</div>
+		        <div id="FPP-stars-images">
+					{{ tigress_url('FPPsummary.png', 'FPP-img') }}
+					{{ tigress_url('dartmouth_triangle_single_physical.png', 'single-star-img-physical', 'stars-img') }}
+					{{ tigress_url('dartmouth_triangle_binary_physical.png', 'double-star-img-physical', 'stars-img') }}
+					{{ tigress_url('dartmouth_triangle_triple_physical.png', 'triple-star-img-physical', 'stars-img') }}
+					{{ tigress_url('dartmouth_triangle_single_observed.png', 'single-star-img-observed', 'stars-img') }}
+					{{ tigress_url('dartmouth_triangle_binary_observed.png', 'double-star-img-observed', 'stars-img') }}
+					{{ tigress_url('dartmouth_triangle_triple_observed.png', 'triple-star-img-observed', 'stars-img') }}
 	        	</div>
 			</div>
 
 			<div id="right">
-				<div id="top-right">
-					{{ tigress_url('signal.png', KOInumber) }}
-				</div>
 
-				<div id="bottom-right">
-					<div id="bottom_right_tabs" class="tabs">
+				<div id="top-right">
+					<div id="top-right-tabs" class="tabs">
 	 					<ul>
 
-							<li id="Pl_tab" class="pointer">
+							<li id="Pl-tab" class="pointer">
 								Pl
 							</li>
 
-							<li id="EB_tab" class="pointer">
+							<li id="EB-tab" class="pointer">
 								EB
 							</li>
 
-							<li id="BEB_tab" class="pointer">
+							<li id="EB2-tab" class="pointer">
+								EB<br>Double Period
+							</li>
+
+							<li id="BEB-tab" class="pointer">
 								BEB
 							</li>
 
-							<li id="HEB_tab" class="pointer">
+							<li id="BEB2-tab" class="pointer">
+								BEB<br>Double Period
+							</li>
+
+							<li id="HEB-tab" class="pointer">
 								HEB
+							</li>
+
+							<li id="HEB2-tab" class="pointer">
+								HEB<br>Double Period
 							</li>
 
 						</ul>
 					</div>
-					<div id="bottom_right_images">
-						{{ tigress_url('pl.png', KOInumber, 'Pl_img') }}
-						{{ tigress_url('eb.png', KOInumber, 'EB_img') }}
-						{{ tigress_url('beb.png', KOInumber, 'BEB_img') }}
-						{{ tigress_url('heb.png', KOInumber, 'HEB_img') }}
+					<div id="top-right-images">
+						{{ tigress_url('pl.png', 'Pl-img', 'top-right-img') }}
+
+						{{ tigress_url('eb.png', 'EB-img', 'top-right-img') }}
+						{{ tigress_url('eb_Px2.png', 'EB2-img', 'top-right-img') }}
+
+						{{ tigress_url('beb.png', 'BEB-img', 'top-right-img') }}
+						{{ tigress_url('beb_Px2.png', 'BEB2-img', 'top-right-img') }}
+
+						{{ tigress_url('heb.png', 'HEB-img', 'top-right-img') }}
+						{{ tigress_url('heb_Px2.png', 'HEB2-img', 'top-right-img') }}
 					</div>
 				</div>
+
+				<div id="bottom-right">
+					{{ tigress_url('signal.png', 'signal-img') }}
+				</div>
+
+				<div id="signature">
+					Designed by Ganesh Ravichandran
+					<a href="https://github.com/TheBatmanofButler/">
+						<img id="github-mark" src="{{ url_for('static', filename='img/GitHub-Mark-Light-120px-plus.png') }}">
+					</a>
+				</div>
+
 			</div>
 		</section>
 
-
-		<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
-		<script type="text/javascript" src="http://mpld3.github.io/js/mpld3.v0.1.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- JS -->
 		<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+		{% if KOInumber != '' %}
+			<script type="text/javascript">
+				imageShow();
+			</script>
+		{% endif %}
 
 	</body>
 

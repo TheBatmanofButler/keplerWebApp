@@ -7,13 +7,14 @@ import re
 
 app = Flask(__name__)
 
-KOInumberList = open('static/other/KOInumberList.txt', 'r').read().split()
+KOInumberList = open('static/other/KOIs.json', 'r').read().split()
 
 @app.route('/', methods=['GET', 'POST'])
 def initPage():
-	try: KOInumber = request.form['KOIinput']
-	except: return render_template('index.html', KOInumberList=KOInumberList, KOInumber='')
-	else: return render_template('index.html', KOInumberList=KOInumberList, KOInumber=KOInumber)
+	if request.method == 'GET':
+		return render_template('index.html', KOInumberList=KOInumberList, KOInumber='')
+	else:
+		return render_template('index.html', KOInumberList=KOInumberList, KOInumber=request.form['KOI-number'])
 
 if __name__ == "__main__":
 	app.run(debug=True)
