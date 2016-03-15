@@ -221,6 +221,32 @@ $('#HEB2-tab').click(function () {
 	});
 });
 
+$('#signal-tab').click(function () {
+	$('#signal-img').show();
+	$('#trap-corner-img').hide();
+	$('#signal-tab').css({
+		'background-color':'white',
+		'color':'#054A91'
+	});
+	$('#trap-corner-tab').css({
+		'background-color':'#054A91',
+		'color':'white'
+	});
+});
+
+$('#trap-corner-tab').click(function () {
+	$('#trap-corner-img').show();
+	$('#signal-img').hide();
+	$('#trap-corner-tab').css({
+		'background-color':'white',
+		'color':'#054A91'
+	});
+	$('#signal-tab').css({
+		'background-color':'#054A91',
+		'color':'white'
+	});
+});
+
 // form code
 $('#submit').click(function(){
 	$('#hiddenSubmit').trigger('click');

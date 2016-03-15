@@ -43,10 +43,10 @@ html, body {
 	float: right;
 }
 
-#bottom-right {
+#bottom-right-images {
 	width: 30vw;
 	height: 23vw;
-	border: 0.17vw solid #054A91;
+	border: 0.17vw solid #fff;
 
 	background-color: #fff;
 	float: right;
@@ -54,6 +54,11 @@ html, body {
 
 #signal-img {
 	width: 100%;
+}
+
+#trap-corner-img {
+	display: none;
+	height: 100%;
 }
 
 #top-right {
@@ -278,4 +283,30 @@ html, body {
 	background-color: #0F084B;
 	width: 100%;
 	cursor: pointer;
+}
+
+#bottom-right-tabs {
+	float: left;
+	margin-left: 8.48vw;
+	width: 8.2vw;
+}
+
+#bottom-right-tabs li {
+	height: 4.07vw;
+	text-align: center;
+}
+
+#signal-tab{
+	background-color: white;
+	color: #054A91;
+}
+
+#trap-corner-tab{
+	background-color: #054A91;
+	color: white;
+}
+
+.top-right-img {
+	display: none;
+	height: 100%;
 }
